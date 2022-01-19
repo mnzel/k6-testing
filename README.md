@@ -10,3 +10,6 @@ https://k6.io/docs/getting-started/installation/
 
 ## Running your first test
 https://k6.io/docs/getting-started/running-k6/
+
+## running on docker
+docker-compose run k6 run /script.js
