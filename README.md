@@ -25,8 +25,3 @@ Viewing the results in grafana dashboard using:
 
 * k6 run script.js -o cloud
 
-### Sample for load, soak, spike, stress ###
-simply replace the stage with the different test and run
-
-### for new URL, replave the url in the script with the following
-https://pallaskenry.test.courseco.co/admin/login
