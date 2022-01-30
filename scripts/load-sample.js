@@ -26,7 +26,7 @@ export let options = {
 };
 
 export default function() {
-    let response = http.get('https://dev.everlycredit.com');
+    let response = http.get('url');
 
     sleep(1);
 };

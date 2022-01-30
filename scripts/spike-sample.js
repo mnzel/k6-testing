@@ -1,15 +1,15 @@
+
+   
 /*
 - variation of stress test, spikes with extreme load over a short period of time
 - determines how the system behaves with sudden traffic surge
 - determines if system will recover when the traffic is normal
-
 # excellent : system performance is not degraded during traffic surge
               Response time is similar in both low and high traffic
 # good : reponse time is slower, but system does not generate any error
          all response are handled
 # poor : system performance is degraded during traffic surge, produces error but recovers after traffic is normal
 # bad : system crashes and does not recover
-
 */
 import http from 'k6/http';
 import { check } from 'k6';
@@ -29,7 +29,7 @@ export let options = {
     ],
 };
 
-const baseUrl = 'https://dev.everlycredit.com';
+const baseUrl = 'url_here';
 
 export default function() {
     

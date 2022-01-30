@@ -1,15 +1,32 @@
-# Performance testing with k6
+# Load Testing with k6 with Grafana monitoring #
 
-**k6** is an open-source load testing tool that makes performance testing easy and productive for engineering teams. k6 is free, developer-centric, and extensible.
+This README would normally document whatever steps needed to get this script up and running along with grafana
 
-Using k6, you can test the reliability and performance of your systems and catch performance regressions and problems earlier. k6 will help you to build resilient and performant applications that scale.
+### Installing k6.io ###
 
-## Installation
-Quick installation:
 https://k6.io/docs/getting-started/installation/
 
-## Running your first test
-https://k6.io/docs/getting-started/running-k6/
+### Docker installation for influxDB, Grafana ###
 
-## running on docker
-docker-compose run k6 run /script.js
+https://docs.docker.com/engine/install/
+
+After the installation of docker, simply run the following on the root dir of suite:
+
+* docker-compose up -d influxdb grafana
+* docker-compose run k6 run /scripts/script.js 
+
+### Viewing in grafana ###
+
+Viewing the results in grafana dashboard using:
+
+* http://localhost:3000/d/k6/k6-load-testing-results
+
+### Sending results to cloud ###
+
+* k6 run script.js -o cloud
+
+### Sample for load, soak, spike, stress ###
+simply replace the stage with the different test and run
+
+### for new URL, replave the url in the script with the following
+https://pallaskenry.test.courseco.co/admin/login

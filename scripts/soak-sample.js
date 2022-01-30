@@ -4,10 +4,8 @@ Soak testing validates the reliability of the system over a time period.
         - make sure database doesnt exhaust that alloted the disk storage
         - make sure logs doesnt exhaust the disk storage
         - make sure external dependent services don't stop after a certain amount of requests
-
         : determine the maximum amount of users
         : run in 3 stages, ramp up users > stay for another 4 hours > ramp down
-
 */
 import http from 'k6/http';
 import { check } from 'k6';
@@ -24,7 +22,7 @@ export let options = {
     ],
 };
 
-const baseUrl = 'https://dev.everlycredit.com';
+const baseUrl = 'url here';
 
 export default () => {
 

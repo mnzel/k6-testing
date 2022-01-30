@@ -3,7 +3,6 @@
 # verify reliability and stability under extreme conditions
 # determines the max capacity of the system
 # determines the breaking point of system and its failure mode
-
 */
 import http from 'k6/http';
 import { check } from 'k6';
@@ -23,7 +22,7 @@ export let options = {
     ],
 };
 
-const baseUrl = 'https://dev.everlycredit.com';
+const baseUrl = 'url_here';
 
 export default function() {
     
