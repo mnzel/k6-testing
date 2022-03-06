@@ -26,7 +26,7 @@ export let options = {
 };
 
 export default function() {
-    let response = http.get('url');
+    let response = http.get('https://onindev100.com.au/magpie/');
 
     sleep(1);
 };
